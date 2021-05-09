@@ -1,0 +1,20 @@
+{
+	"name": "YouTube Smart Choice",
+	"description": "",
+	"version": "1.0",
+	"manifest_version": 3,
+	"permissions": ["activeTab", "declarativeContent"],
+	"content_scripts": [
+		{
+			"matches": ["https://youtube.com/*"],
+			"css": ["background.css"],
+			"js": ["background.js"]
+		}
+	],
+	"action": {
+		"default_title": "YouTube Smart Choice",
+		"default_popup": "./popup/popup.html",
+		"default_icon":"./popup/img/plant_1.png"
+	}
+
+}
